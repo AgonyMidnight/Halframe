@@ -1,0 +1,17 @@
+{
+    "name": "agony/halframe",
+    "authors": [
+        {
+            "name": "AgonyMidnight",
+            "email": "agony.midnight.am@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core/",
+            "Models\\": "app/models/",
+            "Controllers\\": "app/controllers/"
+        }
+    }
+}
