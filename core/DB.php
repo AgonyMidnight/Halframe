@@ -75,7 +75,7 @@ class DB
         $sth = self::$conn->prepare(self::$query);
         $sth->execute();
 
-        while ($result = $sth->fetch(\PDO::FETCH_BOTH)) {
+        while ($result = $sth->fetch(\PDO::FETCH_ASSOC)) {
             $array[] = $result;
         }
         return $array;
