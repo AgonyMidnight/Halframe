@@ -34,7 +34,8 @@ class DB
                 echo "good";
             }
         } catch (\PDOException $e) {
-            echo "nope {$e->getMessage()}";
+            echo "nope" . "<br> " . "{$e->getMessage()}";
+            exit();
         }
     }
 
